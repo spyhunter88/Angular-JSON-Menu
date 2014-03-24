@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JSON dropdown-menu for Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">JBDM</a>
+		  <div class="nav-collapse collapse">
+			<ul class="nav json-menu">
+			</ul>
+		  </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <h1>JSON Bootstrap Dropdown-Menu script</h1>
+      <p class="text-right"><a href="assets/jbm.zip" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent']);">Download JBDM.zip</a></p>
+      <p>Define location of your JSON file in <code>jsone-menu.js</code>
+        <pre class="prettyprint linenums"><ol class="linenums"><li>//load JSON file</li><li><span class="atn">$.getJSON(</span><span class="atv">'menu.json'</span><span class="atn">, function(data) {</span></li></ol></pre></p>
+      <p>Add <code>json-menu.js</code> file onyour page:
+       <pre class="prettyprint linenums"><ol class="linenums"><li><span class="tag"> &lt;script src=</span><span class="atv">"js/json-menu.js"</span>&gt;</script></span></li></ol></pre></p>
+
+      <p>Then add <code>json-menu</code> class where you need to put JSON menu: </p>
+     <p>
+<pre class="prettyprint linenums"><ol class="linenums"><li><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-menu json-menu"</span><span class="tag">&gt;</span></li><li><span class="pln">  ...</span></li><li><span class="tag">&lt;/ul&gt;</span></li></ol></pre></p>
+<p>And... <br>
+     <div class="dropdown">
+                <a href="" class="btn dropdown-toggle" data-toggle="dropdown">
+                 JSON Dropdown-Menu Here 
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+              </div>   </p>
+              <p style="padding-top:60px">Here is JSON example: <br>
+                <pre class="prettyprint linenums"><ol class="linenums"><li><span class="tag">}</span></li><li><span class="atv">"name": "Cars",</span></li><li><span class="atv">"url": "#",</span></li><li><span class="atv">"parent_id": "-1",</span></li><li><span class="atv">"id": "1"</span></li><li><span class="tag">}, {</span></li><li><span class="atv">"name": "Toyota",</span></li><li><span class="atv">"url": "#",</span></li><li><span class="atv">"parent_id": "1",</span></li><li><span class="atv">"id": "2"</span></li><li><span class="tag">}</span></li></ol></pre></p>
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/json-menu.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+
+  </body>
+</html>
